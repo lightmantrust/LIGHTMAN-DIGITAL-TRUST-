@@ -1,0 +1,12 @@
+┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
+│   Frontend      │    │   API Gateway    │    │   Microservices │
+│  React SPA      │◄──►│   Load Balancer  │◄──►│   Trust Service │
+│  macOS Design   │    │   Authentication │    │   AI Orchestrator│
+└─────────────────┘    └──────────────────┘    └─────────────────┘
+         │                       │                       │
+         │                       │                       │
+┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
+│   Mobile App    │    │   Message Queue  │    │   Data Layer    │
+│  iOS & Android  │    │   Redis/RabbitMQ │    │   MongoDB       │
+│  Cross-platform │    │   Event Bus      │    │   PostgreSQL    │
+└─────────────────┘    └──────────────────┘    └─────────────────┘
