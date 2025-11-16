@@ -1,0 +1,2 @@
+docker run --rm -v "$PWD":/repo lightmantrust/repo-lint:latest \
+  --readme --security --license --containers --i18n --governance
