@@ -1,0 +1,25 @@
+name: "🌪️ Chaos Test Report"
+description: "Report a chaos-engineering failure or regression"
+title: "[CHAOS] <one-liner>"
+labels: ["chaos", "priority-critical"]
+body:
+  - type: input
+    id: kill_time
+    attributes:
+      label: "Kill-time (UTC)"
+      placeholder: "2025-11-16T14:23:10Z"
+  - type: dropdown
+    id: fault
+    attributes:
+      label: "Injected fault"
+      options:
+        - random-kill-validator
+        - latency-spike-5s
+        - packet-drop-10pc
+        - disk-corrupt-1mb
+        - clock-skew-30s
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Grafana / Loki permalink"
+      placeholder: "https://grafana.lightman-trust.io/..."
