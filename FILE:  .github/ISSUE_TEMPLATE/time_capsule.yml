@@ -1,0 +1,14 @@
+name: "⏳ Time-Capsule Entry"
+description: "Suggest text for the annual time-capsule tag"
+title: "[CAPSULE] <title>"
+labels: ["time-capsule"]
+body:
+  - type: textarea
+    id: message
+    attributes:
+      label: "Message to the future (max 280 chars)"
+  - type: input
+    id: unlock_year
+    attributes:
+      label: "Unlock year (≥ 2030)"
+      placeholder: "2030"
