@@ -1,0 +1,22 @@
+
+--------------------------------------------------
+FILE:  `SWAGGER.json`   (auto-generated, but commit the stub)
+--------------------------------------------------
+```json
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "LightMan Digital Trust API",
+    "version": "{{ .Git.ShortCommit }}"
+  },
+  "paths": {
+    "/health": {
+      "get": {
+        "summary": "Health check",
+        "responses": {
+          "200": { "description": "OK" }
+        }
+      }
+    }
+  }
+}
