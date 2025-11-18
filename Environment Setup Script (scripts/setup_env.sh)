@@ -1,0 +1,16 @@
+#!/bin/bash
+# Setup Python environment for LTD repo
+
+echo "Creating virtual environment..."
+python3 -m venv venv
+source venv/bin/activate
+
+echo "Installing Python dependencies..."
+pip install --upgrade pip
+pip install -r requirements.txt
+
+echo "Setting environment variables..."
+export LTD_ENV=development
+export LTD_DEBUG=True
+
+echo "Environment setup complete!"
