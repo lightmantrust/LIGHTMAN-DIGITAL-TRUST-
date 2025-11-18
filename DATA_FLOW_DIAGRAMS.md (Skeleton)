@@ -1,0 +1,49 @@
+
+# Data Flow Diagrams
+
+## Overview
+Describes data movement between modules.
+
+1. **External Input → Connector Agent**
+2. **Connector Agent → Orchestrator Agent**
+3. **Orchestrator Agent → Simulation Agent / Backend**
+4. **Simulation/Backend → Orchestrator Agent**
+5. **Orchestrator Agent → Frontend / Reports**
+6. **Logging → Centralized Audit Logs**
+
+*Include visual diagrams using Mermaid or draw.io for clarity:*
+
+```mermaid
+flowchart TD
+    EXT[External Input] --> CON[Connector Agent]
+    CON --> ORC[Orchestrator Agent]
+    ORC --> SIM[Simulation Agent]
+    ORC --> BE[Backend Services]
+    SIM --> ORC
+    BE --> ORC
+    ORC --> FE[Frontend]
+    ORC --> LOG[Audit Logs]
+
+---
+
+## 5. MODULE_DEPENDENCIES.md
+
+```markdown
+# Module Dependencies
+
+## AI Agents
+- Orchestrator depends on Connector and Simulation agents
+- Connector depends on external APIs and database schemas
+- Simulation depends on backend data and orchestrator task inputs
+
+## Backend
+- Database: PostgreSQL/MongoDB
+- REST/GraphQL APIs consumed by frontend & agents
+
+## Frontend
+- Dashboard: React/Next.js
+- Connects to backend via API endpoints
+
+## Infrastructure
+- Docker Compose/Terraform for environment setup
+- CI/CD pipelines trigger build/test/deploy workflows
