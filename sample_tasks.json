@@ -1,0 +1,8 @@
+{
+  "tasks": [
+    "Process incoming data",
+    "Validate user input",
+    "Run predictive model",
+    "Generate report"
+  ]
+}
