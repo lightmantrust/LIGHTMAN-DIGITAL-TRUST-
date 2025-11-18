@@ -1,0 +1,31 @@
+
+# Infrastructure Diagrams
+
+## Overview
+Depicts deployment environment, cloud resources, and orchestration.
+
+- Dockerized microservices
+- CI/CD pipelines
+- Backup & Disaster Recovery integration
+- Optional cloud deployment (AWS/GCP/Azure)
+
+*Suggested visual diagram using Mermaid:*
+
+```mermaid
+graph LR
+    DEV[Developer] --> GH[GitHub Repository]
+    GH --> CI[CI/CD Pipeline]
+    CI --> DOCKER[Docker Containers]
+    DOCKER --> APP[Application Services]
+    APP --> DB[Database]
+    APP --> FE[Frontend]
+    APP --> LOG[Centralized Logging]
+
+---
+
+### ✅ Outcome
+
+- **Developers**: Understand system flow and module interactions instantly.  
+- **Auditors**: Clear traceability of data flow, agents, and infrastructure.  
+- **Stakeholders**: High-level architecture overview for compliance and operational review.  
+- **Onboarding**: Reduces ramp-up time for new engineers and external auditors.
