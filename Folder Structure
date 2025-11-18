@@ -5,3 +5,11 @@ docs/architecture/
 ├─ DATA_FLOW_DIAGRAMS.md
 ├─ MODULE_DEPENDENCIES.md
 └─ INFRASTRUCTURE_DIAGRA
+
+
+examples/
+├─ run_orchestrator.py
+├─ run_connector.py
+├─ run_simulation.py
+├─ sample_tasks.json
+└─ README.md
